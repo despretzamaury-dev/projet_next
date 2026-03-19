@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <main style={{ 
-      backgroundColor: '#E53E3E', // Beautiful red color
+      background: 'linear-gradient(to bottom, #AA151B 25%, #F1BF00 25%, #F1BF00 75%, #AA151B 75%)', // Spanish flag colors
       minHeight: '100vh', 
       display: 'flex', 
       flexDirection: 'column',
@@ -13,8 +13,8 @@ export default function Home() {
       justifyContent: 'center',
       fontFamily: 'sans-serif'
     }}>
-      <h1 style={{ color: 'white', marginBottom: '3rem', fontSize: '3rem', textAlign: 'center' }}>
-        Secret Zone
+      <h1 style={{ color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.6)', marginBottom: '3rem', fontSize: '3rem', textAlign: 'center' }}>
+        Best Tennis player
       </h1>
       <SecretButton secret={secret} />
     </main>

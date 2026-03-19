@@ -33,8 +33,10 @@ export default function SecretButton({ secret }: { secret: string }) {
           fontSize: '1.5rem',
           fontWeight: '500',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-          maxWidth: '80%',
-          wordWrap: 'break-word',
+          whiteSpace: 'nowrap',
+          maxWidth: '90vw',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
           textAlign: 'center'
         }}>
           {secret || 'Aucun secret trouvé'}
